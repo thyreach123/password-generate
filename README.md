@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
 <body>
@@ -14,10 +13,87 @@
             <img src="images/copy.png" onclick="copyPassword()">
         </div>
         <button onclick="createPassword()"><img src="images/generate.png">Generate Password</button>
-
         <div id="copyStatus" class="copyStatus">Copied to Clipboard</div>
     </div>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #002339;
+    color: #fff;
+}
+.container{
+    margin: 12%;
+    width: 90%;
+    max-width: 700px;
+}
+.display{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    justify-content: space-between;
+    padding: 26px 20px;
+}
+.container h1 span{
+    font-weight: 500;
+    font-size: 45px;
+    color: #019f55;
+    border-bottom: 2px solid #019f55;
+    padding: 5px;
+}
+.display img{
+    width: 30px;
+    cursor: pointer;
+}
+.display input{
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+}
+.container button{
+    outline: 0;
+    border: 0;
+    background: #019f55;
+    color: #000;
+    font-size: 22px;
+    font-weight: 300;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding: 16px 26px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.container button img{
+    width: 28px;
+    margin-right: 10px;
+}
+.copyStatus{
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    text-align: center;
+    font-size: 18px;
+}
+</style>
+<script>
     
+</script>
 </body>
-<script type="text/javascript" src="function.js"></script>
 </html>
